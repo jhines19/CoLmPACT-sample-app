@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  ColmPACT
 //
-//  Created by Kamryn Hines on 2/4/22.
+//  Created by Jaraad Hines on 2/4/22.
 //
 
 import SwiftUI
@@ -19,3 +19,5 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+//leftAlign(text: "Gladys West is one of my favorite mathematical contributors and heroes in the field of engineering. We would not have geodesy models of the Earth or GPS systems the way we do today, without her!", columns: 5)

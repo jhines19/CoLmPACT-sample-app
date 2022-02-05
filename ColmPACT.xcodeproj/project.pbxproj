@@ -11,6 +11,7 @@
 		6D499CA727ADD85E00EF4A2F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D499CA627ADD85E00EF4A2F /* ContentView.swift */; };
 		6D499CA927ADD86000EF4A2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D499CA827ADD86000EF4A2F /* Assets.xcassets */; };
 		6D499CAC27ADD86000EF4A2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D499CAB27ADD86000EF4A2F /* Preview Assets.xcassets */; };
+		6D499CB727AF0B6300EF4A2F /* LeftAlign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D499CB627AF0B6300EF4A2F /* LeftAlign.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		6D499CA627ADD85E00EF4A2F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6D499CA827ADD86000EF4A2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D499CAB27ADD86000EF4A2F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6D499CB627AF0B6300EF4A2F /* LeftAlign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftAlign.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 		6D499CA327ADD85E00EF4A2F /* ColmPACT */ = {
 			isa = PBXGroup;
 			children = (
+				6D499CB627AF0B6300EF4A2F /* LeftAlign.swift */,
 				6D499CA427ADD85E00EF4A2F /* ColmPACTApp.swift */,
 				6D499CA627ADD85E00EF4A2F /* ContentView.swift */,
 				6D499CA827ADD86000EF4A2F /* Assets.xcassets */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D499CB727AF0B6300EF4A2F /* LeftAlign.swift in Sources */,
 				6D499CA727ADD85E00EF4A2F /* ContentView.swift in Sources */,
 				6D499CA527ADD85E00EF4A2F /* ColmPACTApp.swift in Sources */,
 			);
