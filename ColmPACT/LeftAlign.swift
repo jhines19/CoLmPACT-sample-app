@@ -5,8 +5,6 @@
 //  Created by Jaraad Hines on 2/5/22.
 //
 
-
-
 func leftAlign(text: String, columns: Int){
     var value_index: Int = 0;
     //setting up every value to have an index value
