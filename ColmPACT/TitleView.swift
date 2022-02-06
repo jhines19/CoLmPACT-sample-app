@@ -24,6 +24,12 @@ struct TitleView: View {
                         Button("Press to Start") {
                             self.selection = 1
                         }
+                        .font(.title)
+                        .frame(minWidth: 0, maxWidth: 275)
+                        .padding()
+                        .foregroundColor(.white)
+                        .background(LinearGradient(gradient: Gradient(colors: [Color.red, Color.blue]), startPoint: .leading, endPoint: .trailing))
+                        .cornerRadius(40)
                     }
                 }
             }
