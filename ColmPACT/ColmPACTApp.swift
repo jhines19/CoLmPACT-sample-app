@@ -11,7 +11,9 @@ import SwiftUI
 struct ColmPACTApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            VStack {
+                TitleView()
+            }
         }
     }
 }

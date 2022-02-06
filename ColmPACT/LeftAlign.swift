@@ -5,6 +5,8 @@
 //  Created by Jaraad Hines on 2/5/22.
 //
 
+import SwiftUI
+
 func leftAlign(text: String, columns: Int) {
     var value_index: Int = 0;
     let arr = text.split(separator: " ")
@@ -36,6 +38,7 @@ func leftAlign(text: String, columns: Int) {
             }
         }
     }
+    leftAlign(text: "Gladys West is one of my favorite mathematical contributors and heroes in the field of engineering. We would not have geodesy models of the Earth or GPS systems the way we do today, without her!", columns: 5)
 }
 
 
