@@ -11,25 +11,27 @@ struct MainView: View {
     
     @State private var inputText = String()
     @State private var inputColumns = Int()
- 
+    @State var submit = false
+    @State private var isShowingModal = false
     
     var body: some View {
-        VStack {
+        NavigationView {
             Form {
-                TextField(text: $inputText, prompt: Text("Required")) {
-                    Text("Input Text Here")
+                Section(header: Text("input sentence and column number below")) {
+                    TextField("Your Sentence", text: $inputText)
+                        .textFieldStyle(.roundedBorder)
+                    TextField("How Many Columns?", value: $inputColumns, format: .number)
+                        .textFieldStyle(.roundedBorder)
                 }
-                TextField(value: $inputColumns, format: .number, prompt: Text("Required")) {
-                    Text("Input Text Here")
-                }
+                Button(action: {
+                    self.submit.toggle()}) {
+                            Text("Submit")
+                        }
             }
             .onSubmit(of: .text) {
-                print(leftAlign(text: inputText, columns: inputColumns))
-            }
-            
-            
-//            TextEditor(text: $ourText)
-//                .border(Color.black, width: 8)
+                            leftAlign(text: inputText, columns: inputColumns)
+                        }
+            .navigationBarTitle("Column Formatter")
         }
     }
 }
