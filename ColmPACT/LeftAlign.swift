@@ -25,9 +25,10 @@ func leftAlign(text: String, columns: Int) {
                 print(val+spacing, terminator: " ")
             } else {
                 //longest value spacing
-                let spacing = ""
+                let spacing = String(repeating: "", count: 0)
                 print(val+spacing, terminator: " ")
             }
+            
             //increment value_index with every val iteration
             value_index += 1
             
@@ -38,5 +39,4 @@ func leftAlign(text: String, columns: Int) {
             }
         }
     }
-    leftAlign(text: "Gladys West is one of my favorite mathematical contributors and heroes in the field of engineering. We would not have geodesy models of the Earth or GPS systems the way we do today, without her!", columns: 5)
 }
