@@ -24,23 +24,12 @@ struct MainView: View {
                 }
                 TextEditor(text:$changeText)
                 Button(action: {
-                    self.changeText = "\(leftAlign(text: inputText, columns: inputColumns))"
+                    self.changeText = leftAlign(text: inputText, columns: inputColumns)
                 }) {
                     Text("Click To View Your Formatted Sentence!")
                 }
             }
             .navigationBarTitle("Column Formatter")
         }
-    }
-}
-//get my TextEditor View to contain the results of my (leftAlign) function
-//the TextEditor view has "text" as it's parameter; any others?
-//switch statement for every value because if else is not conducive for storing val in value
-//now the value that has our result is our multilineString
-
-
-struct MainViews: PreviewProvider {
-    static var previews: some View {
-            MainView()
     }
 }
