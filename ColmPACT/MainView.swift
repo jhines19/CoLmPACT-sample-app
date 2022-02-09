@@ -22,7 +22,7 @@ struct MainView: View {
                     TextField("How Many Columns?", value: $inputColumns, format: .number)
                         .textFieldStyle(.roundedBorder)
                 }
-                TextEditor(text:$changeText)
+                TextEditor(text:$changeText).font(.system(.body,design: .monospaced))
                 Button(action: {
                     self.changeText = leftAlign(text: inputText, columns: inputColumns)
                 }) {
@@ -33,3 +33,5 @@ struct MainView: View {
         }
     }
 }
+//each character has specific spacing in view: monospace
+//pixel width in the console has no font styling, make sure you use monospace to match that in your view

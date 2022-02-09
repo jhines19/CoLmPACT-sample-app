@@ -19,20 +19,19 @@ func leftAlign(text: String, columns: Int) -> String {
         //get length of longest value
         if let max = arr.max(by: {$1.count > $0.count}) {
             let longest_value = max.count
-            
             //core computation:
             //leftAlign spacing for vals and printing vals
-            if (val.count < longest_value) {
+//            if (val.count < longest_value) {
                 let spacing_amount = longest_value - val.count
                 let spacing = String(repeating: " ", count: spacing_amount)
                 value = val+spacing+"  "
                 multilineString.append(value)
-            } else {
-                //longest value spacing
-                let spacing = String(repeating: "", count: 0)
-                value = val+spacing+"  "
-                multilineString.append(value)
-            }
+//            } else {
+//                //longest value spacing
+//                let spacing = String(repeating: "", count: 0)
+//                value = val+spacing+"  "
+//                multilineString.append(value)
+//            }
             //increment value_index with every val iteration
             value_index += 1
             
@@ -47,3 +46,6 @@ func leftAlign(text: String, columns: Int) -> String {
     print(multilineString)
     return(multilineString)
 }
+
+//main if block does not need to be there since we check the difference between longest value in spacing_amount; longest_value - longest_value = 0;
+//O(n) space and O(n^2) speed
