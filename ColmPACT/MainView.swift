@@ -11,7 +11,7 @@ struct MainView: View {
     
     @State private var inputText = String()
     @State private var inputColumns = Int()
-    @State var changeText: String = ""
+    @State var changeText = String()
     
     var body: some View {
         NavigationView {

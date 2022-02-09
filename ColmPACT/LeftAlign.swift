@@ -44,5 +44,6 @@ func leftAlign(text: String, columns: Int) -> String {
             }
         }
     }
+    print(multilineString)
     return(multilineString)
 }
